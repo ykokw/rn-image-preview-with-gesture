@@ -14,7 +14,6 @@ type Props = {
 };
 
 const ModalContents = gestureHandlerRootHOC(
-  // @ts-expect-error https://github.com/software-mansion/react-native-gesture-handler/issues/2412
   ({ imageUri, onRequestClose }: Props) => {
     const inset = useSafeAreaInsets();
 
@@ -58,7 +57,7 @@ export const ImagePreviewModal = (props: Props) => {
       presentationStyle="overFullScreen"
       statusBarTranslucent={true}
     >
-      <ModalContents {...(props as any as JSX.IntrinsicAttributes)} />
+      <ModalContents {...props} />
     </Modal>
   );
 };
