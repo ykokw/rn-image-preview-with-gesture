@@ -67,9 +67,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'rgba(0, 0, 0, 0.85)',
   },
-  touchableContainer: {
-    flex: 1,
-  },
   closeButton: {
     width: 40,
     height: 40,
