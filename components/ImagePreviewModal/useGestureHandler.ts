@@ -10,12 +10,6 @@ export const useGestureHandler = () => {
   const pinchGesture = Gesture.Pinch()
     .onUpdate((e) => {
       scale.value = Math.max(savedScale.value * e.scale, 1)
-      if (scale.value === 1) {
-        offset.value = {
-          x: 0,
-          y: 0,
-        }
-      }
     })
     .onEnd(() => {
       savedScale.value = scale.value
@@ -45,7 +39,7 @@ export const useGestureHandler = () => {
     ],
   }))
 
-  const composedGesture = Gesture.Race(pinchGesture, panGesture)
+  const composedGesture = Gesture.Simultaneous(pinchGesture, panGesture)
 
   const reset = () => {
     offset.value = { x: 0, y: 0 }
