@@ -2,7 +2,7 @@
 
 React Native (Expo) example repository of the image preview modal like this
 
-![Preview image of the image preview modal](https://gyazo.com/8ff39d88c80cfb3ac95dd00f0899a1a9)
+![Preview image of the image preview modal](https://gyazo.com/8ff39d88c80cfb3ac95dd00f0899a1a9/raw)
 
 
 ---
