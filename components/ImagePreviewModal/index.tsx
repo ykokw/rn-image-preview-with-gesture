@@ -31,6 +31,7 @@ const ModalContents = gestureHandlerRootHOC(
                 source={{ uri: imageUri }}
                 resizeMode="contain"
                 style={[styles.image, animatedStyle]}
+                testID="preview-image"
               />
             </GestureDetector>
             <View

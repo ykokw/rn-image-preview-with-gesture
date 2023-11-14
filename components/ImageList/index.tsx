@@ -52,8 +52,8 @@ export const ImageList = () => {
         style={styles.scrollContainer}
       >
         {images.map((uri) => (
-          <TouchableWithoutFeedback onPress={() => onPressImage(uri)} key={uri}>
-            <Image source={uri} style={styles.image} />
+          <TouchableWithoutFeedback onPress={() => onPressImage(uri)} key={uri} testID="image-button" accessibilityLabel="image-button">
+            <Image source={uri} style={styles.image}/>
           </TouchableWithoutFeedback>
         ))}
       </ScrollView>
