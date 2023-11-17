@@ -1,4 +1,6 @@
 {
-  "compilerOptions": {},
+  "compilerOptions": {
+    "types": ["node", "@wdio/globals/types"]
+  },
   "extends": "expo/tsconfig.base"
 }
